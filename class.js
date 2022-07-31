@@ -13,7 +13,7 @@ class Person {
          my spike is ${this.height} centimeters, my hair color is ${this.hairColor}`);
     }
     a() {
-        if(this.name == "male") {
+        if(this.gender == "male") {
             return "BOY";
         } else {
             return "GIRL";
