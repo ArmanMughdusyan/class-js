@@ -1,22 +1,8 @@
-class Person {
-    constructor(name, lastName, age, height, gender, hairColor) {
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
-        this.height = height;
-        this.gender = gender;
-        this.hairColor = hairColor;
-    }
+let arr = [15, 5, 9, 65, 8, 7, 6];
 
-    aboutMe() {
-        console.log(`Hi, I am ${this.name} ${this.lastName},i am ${this.gender}, i am ${this.age} years old,
-         my spike is ${this.height} centimeters, my hair color is ${this.hairColor}`);
-    }
+for(i = 4; i < arr.length; i++){
+    let a = arr[i];
+    arr[i] = arr[i + 1];
+    arr[i + 1] = a;
 };
-
-let person1 = new Person("Poxos", "Poxosyan", 33, 168, "male", "black");
-person1.aboutMe();
-let person2 = new Person("Petros", "Petrosyan", 26, 189, "male", "yellow");
-person2.aboutMe();
-let person3 = new Person("Anna", "Ananyan", 18, 156, "female", "brown");
-person3.aboutMe();
+alert(arr[2]);
